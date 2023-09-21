@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --second-font: "Clicker Script", cursive;
+    --primary-color: #603809;
+    --desc-color: #707070;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Playfair Display", serif;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Playfair Display", serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+input,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.container {
+    width: 1180px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 48px;
+
+    display: inline-block;
+    min-width: 134px;
+    padding: 0px 16px;
+    height: var(--height);
+    line-height: var(--height);
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 24px;
+    color: #1e1e1e;
+    background: #f9c06a;
+    box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.section-heading {
+    font-size: 5.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.section-desc {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--desc-color);
+}
+
+.logo__text {
+    font-family: "Clicker Script", cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .highlight {
+        color: transparent;
+        background-image: linear-gradient(
+            43deg,
+            #4158d0 0%,
+            #c850c0 46%,
+            #ffcc70 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.light {
+    color: transparent;
+    background-image: conic-gradient(
+        from var(--rotate) at 29% 10%,
+        #0b1012 40%,
+        #f4f7fc55,
+        #0b1012 60%
+    );
+    --webkit-background-clip: text;
+    background-clip: text;
+    animation: rotateLight 3s ease-in-out infinite alternate;
+}
+
+@keyframes rotateLight {
+    from {
+        --rotate: 0.15turn;
+    }
+    to {
+        --rotate: -0.15turn;
+    }
+}
+
+/* Header */
+.header {
+    background: url(../img/header-bg.svg) no-repeat top / 100vw;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header__link {
+    padding: 8px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.header__sign-up,
+.header__sign-in {
+    color: #1e1e1e;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+}
+
+.header__sign-up {
+    --height: 48px;
+
+    min-width: 100px;
+    height: var(--height);
+    line-height: var(--height);
+    margin-left: 35px;
+    transform: all 0.3s;
+    cursor: pointer;
+}
+
+.header__sign-in {
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header__sign-in:hover {
+    text-decoration: underline;
+}
+
+/* Header Hero */
+.header__hero {
+    width: 45%;
+    margin-top: 115px;
+}
+
+.header__desc-intr {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.header__heading {
+    margin: 30px 0 20px;
+    font-family: var(--second-font);
+    font-size: 22rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.header__desc {
+    margin-bottom: 34px;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.header__hero-btn {
+    margin-bottom: 95px;
+}
+
+/* Menu */
+.menu {
+    margin-top: 20px;
+    padding: 30px 0;
+}
+
+.menu__heading {
+    text-align: center;
+}
+
+.menu__intr {
+    width: 50%;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.menu__title {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: "Satisfy", cursive;
+}
+
+.menu__desc {
+    margin-top: 16px;
+}
+
+.menu__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    column-gap: 30px;
+    padding: 65px 0;
+    margin-top: 30px;
+}
+
+.menu-item {
+    margin-top: 60px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.menu-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 10px 10px 24px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 24px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 24px -7px rgba(0, 0, 0, 0.75);
+}
+
+.menu-item__thumb {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.menu-item:nth-child(1) .menu-item__thumb,
+.menu-item:nth-child(5) .menu-item__thumb {
+    object-position: 0 -94px;
+}
+
+.menu-item__body {
+    padding: 16px 16px 25px;
+    /* background: #f2ce87; */
+    border: 1px solid #f2ce87;
+    border-top-color: transparent;
+}
+
+.menu-item__title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #442502de;
+    font-weight: 500;
+}
+
+.menu-item__body-inf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.menu-item__price {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.menu-item__btn {
+    display: inline-block;
+    width: 80px;
+    margin-left: auto;
+    padding: 8px 16px;
+    line-height: 1.4;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    background: #f2ce87;
+    transition: .3s;
+}
+
+.menu-item__btn:hover {
+    color: transparent;
+    background-color: #fad961;
+    background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    outline: 1px solid #f2ce87;
+}
