@@ -99,9 +99,18 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="header fixed">
+        <header class="header">
             <div class="container">
                 <div class="header__inner">
+                    <div class="header__bg">
+                        <video autoplay muted loop class="header__video">
+                            <source
+                                src="./assets/img/video/coffee_-_93269 (Original).mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+
                     <div class="header__top">
                         <div class="logo">
                             <a href="#!" class="logo__text"> Bean Scene </a>
@@ -209,15 +218,6 @@
             <section class="discover">
                 <div class="container">
                     <div class="discover__inner">
-                        <figure>
-                            <img
-                                loading="lazy"
-                                src="./assets/img/coffee_blast.svg"
-                                alt=""
-                                class="discover__blast"
-                            />
-                        </figure>
-
                         <section class="discover__content">
                             <h2 class="section-heading">
                                 Discover the best coffee
@@ -339,6 +339,11 @@
                             </section>
                         </article>
                     </div>
+
+                    <div class="menu__full">
+                        <a href="./menu.html" class="menu__more">View full menu</a>
+                        <i class="fa-solid fa-chevron-right menu__chevron"></i>
+                    </div>
                 </div>
             </section>
 
@@ -447,12 +452,6 @@
                         </section>
 
                         <div class="chance__block-img">
-                            <img
-                                loading="lazy"
-                                src="./assets/img/coffee_bean.svg"
-                                alt=""
-                                class="chance__thumb-bean"
-                            />
                             <img
                                 loading="lazy"
                                 src="./assets/img/cup.svg"

@@ -3,6 +3,12 @@ const btnOpenSignup = document.querySelector(".js-sign-up");
 const btnCloseModal = document.querySelector(".js-closeModal");
 const modal = document.querySelector(".modal");
 
+const alerText = document.querySelector(".modal__btn");
+
+alerText.addEventListener("click", function () {
+    alert("You have successfully login!");
+});
+
 const openModal = function () {
     modal.classList.remove("hidden");
 };
