@@ -44,31 +44,40 @@ body {
     display: none;
 }
 
-/* Modal */
-.modal {
+/* Overlay */
+.overlay {
     position: fixed;
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    backdrop-filter: blur(5px);
 }
 
-.modal__inner {
-    position: relative;
-    width: 400px;
+/* Sign In Modal */
+
+.signIn-modal {
+    position: fixed;
     padding: 30px;
+    width: 400px;
     top: 50%;
     left: 50%;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     transform: translate(-50%, -50%);
-    color: #000;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 10;
 }
 
-.modal__close-btn {
+.signIn__heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #603809;
+    text-align: center;
+}
+
+.signIn__close-btn {
     position: absolute;
     text-align: center;
     right: 10px;
@@ -82,49 +91,81 @@ body {
     transition: 0.3s;
 }
 
-.modal__close-btn:hover {
-    background: var(--primary-color);
+.signIn__close-btn:hover {
+    background: #603809;
     color: #fff;
     cursor: pointer;
 }
 
-.modal__heading {
-    margin-bottom: 20px;
-    font-size: 3rem;
-    color: var(--primary-color);
-    text-align: center;
-}
-
-.modal__input {
+.signIn__input {
     width: 100%;
     height: 30px;
     padding: 0 10px;
     margin-bottom: 16px;
     border-radius: 4px;
     font-size: 1.8rem;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1px solid #603809;
+    color: #603809;
     outline: none;
 }
 
-.modal-row {
+.signIn-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--primary-color);
+    color: #603809;
     font-size: 1.7rem;
 }
 
-.modal__forgot-pass {
-    color: var(--primary-color);
+.signIn-row__rem label {
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    transition: ease 0.3s;
+}
+
+.signIn-row__rem label::before,
+.signIn-row__rem label::after {
+    content: "";
+    display: inline-block;
+    transition: ease 0.3s;
+}
+
+.signIn-row__rem label::before {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    background: #fff;
+    border: 1px solid #3e3b3b;
+    border-radius: 4px;
+}
+
+.signIn-row__rem [type="checkbox"]:checked ~ label::before {
+    background: #603809;
+    border-color: #603809;
+}
+
+.signIn-row__rem [type="checkbox"]:checked ~ label::after {
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    border-left: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fff;
+    rotate: -58deg;
+    top: 3px;
+    left: 3px;
+}
+
+.signIn__forgot-pass {
+    color: #603809;
     padding: 8px;
 }
 
-.modal__forgot-pass:hover {
+.signIn__forgot-pass:hover {
     text-decoration: underline;
 }
 
-.modal__btn {
+.signIn__btn {
     position: relative;
     width: 100px;
     left: 50%;
@@ -133,46 +174,100 @@ body {
     border: 1px solid transparent;
     outline: none;
     text-align: center;
-    background: var(--primary-color);
+    background: #603809;
     color: #fff;
     transform: translateX(-50%);
     transition: 0.3s;
     font-size: 1.8rem;
 }
 
-.modal__btn:hover {
+.signIn__btn:hover {
     cursor: pointer;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #603809;
     background: #fff;
-    color: var(--primary-color);
+    color: #603809;
 }
 
-.modal__footer {
+.signIn__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
 
-.modal__footer-desc {
+.signIn__footer-desc {
     font-size: 1.6rem;
     text-decoration: underline;
 }
 
-.modal__footer-btn {
+.signIn__footer-btn {
     font-size: 1.6rem;
     padding: 8px 10px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #603809;
     font-size: #000;
     background: #fff;
     transition: 0.3s;
 }
 
-.modal__footer-btn:hover {
-    background: var(--primary-color);
+.signIn__footer-btn:hover {
+    background: #603809;
     color: #fff;
     cursor: pointer;
 }
+
+/* About Modal */
+
+.about-modal {
+    position: fixed;
+    padding: 50px 30px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    background: #fff;
+    z-index: 10;
+}
+
+.about__close-btn {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 6px;
+    right: 6px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.about__close-btn:hover {
+    background: #603809;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.about-separate {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 8px;
+    background: #603809;
+}
+
+.about-modal__heading {
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.about-modal__desc {
+    margin-top: 8px;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #050404;
+}
+
 /* Common */
 a {
     text-decoration: none;
@@ -234,47 +329,6 @@ button {
     color: #fff;
 }
 
-@supports (background-clip: text) or (-webkit-background-clip: text) {
-    .highlight {
-        color: transparent;
-        background-image: linear-gradient(
-            43deg,
-            #4158d0 0%,
-            #c850c0 46%,
-            #ffcc70 100%
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
-}
-
-@property --rotate {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-.light {
-    color: transparent;
-    background-image: conic-gradient(
-        from var(--rotate) at 29% 10%,
-        #0b1012 40%,
-        #f4f7fc55,
-        #0b1012 60%
-    );
-    --webkit-background-clip: text;
-    background-clip: text;
-    animation: rotateLight 3s ease-in-out infinite alternate;
-}
-
-@keyframes rotateLight {
-    from {
-        --rotate: 0.15turn;
-    }
-    to {
-        --rotate: -0.15turn;
-    }
-}
 /* Header */
 .header {
     padding: 20px 0;
@@ -325,6 +379,16 @@ button {
 }
 
 .header__sign-up {
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header__sign-up:hover {
+    text-decoration: underline;
+}
+
+.header__sign-in {
     --height: 48px;
 
     min-width: 100px;
@@ -333,16 +397,6 @@ button {
     margin-left: 35px;
     transform: all 0.3s;
     cursor: pointer;
-}
-
-.header__sign-in {
-    color: #fff;
-    background: transparent;
-    cursor: pointer;
-}
-
-.header__sign-in:hover {
-    text-decoration: underline;
 }
 
 /* Header Hero */
@@ -434,16 +488,20 @@ button {
     color: #fff;
     background: #bd993a;
     transition: 0.3s;
+    border: none;
+    outline: none;
 }
 
 .about-content__btn:hover {
     transform: scale(1.1);
     box-shadow: 2px 2px 1px 1px #f5c79e;
+    cursor: pointer;
 }
+
 /* Discover */
 .discover {
     position: relative;
-    margin-top: 40px;
+    margin: 65px 0;
     padding: 40px 0px;
 }
 
@@ -466,12 +524,16 @@ button {
 }
 
 .discover__img {
+    display: flex;
     width: 42%;
 }
 
 .discover__thumb {
-    width: 100%;
-    height: 476px;
+    width: 400px;
+    height: 450px;
+    margin-left: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.6) 6px 7px 12px;
     object-fit: cover;
 }
 

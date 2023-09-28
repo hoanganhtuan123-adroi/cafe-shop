@@ -122,12 +122,12 @@
                                     <a href="#!" class="header__link">Home</a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="./menu.html" class="header__link">
+                                    <a href="#fullMenu" class="header__link">
                                         Menu
                                     </a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="#!" class="header__link"
+                                    <a href="#about-us" class="header__link"
                                         >About Us</a
                                     >
                                 </li>
@@ -142,15 +142,15 @@
                         <div class="header__cta">
                             <button
                                 href="#!"
-                                class="js-sign-in header__sign-in"
+                                class="js-sign-up header__sign-up"
                             >
-                                Sign in
+                                Sign up
                             </button>
                             <button
                                 href=""
-                                class="js-sign-up btn header__sign-up"
+                                class="js-sign-in btn header__sign-in"
                             >
-                                Sign up
+                                Sign in
                             </button>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
 
         <main>
             <!-- About -->
-            <section class="about">
+            <section id="about-us" class="about">
                 <div class="container">
                     <h2 class="about__heading"><span>About</span> Us</h2>
 
@@ -202,13 +202,10 @@
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Soluta, pariatur.
                             </p>
-                            <a
-                                target="_blank"
-                                href="https://www.thirdwavecoffeeroasters.com/blogs/blog/specialty-coffee-what-makes-it-so-special"
-                                class="about-content__btn"
-                            >
+
+                            <button class="about-content__btn js-about-btn">
                                 Learn More
-                            </a>
+                            </button>
                         </section>
                     </div>
                 </div>
@@ -239,7 +236,7 @@
                         <figure class="discover__img">
                             <img
                                 loading="lazy"
-                                src="./assets/img/ds-img.svg"
+                                src="./assets/img/discover-img.jpg"
                                 alt="Cofe"
                                 class="discover__thumb"
                             />
@@ -249,7 +246,7 @@
             </section>
 
             <!-- Menu -->
-            <section class="menu">
+            <section id="fullMenu" class="menu">
                 <div class="container">
                     <h2 class="section-heading">
                         Enjoy a new blend of coffee style
@@ -808,31 +805,65 @@
         </footer>
 
         <!-- Modal -->
-        <div class="modal hidden">
-            <!-- Sign up -->
-            <div class="modal__inner">
-                <div class="modal__header">
-                    <h2 class="modal__heading">Login Here</h2>
-                    <button class="modal__close-btn js-closeModal">
+        <div>
+            <div class="overlay hidden"></div>
+            <!-- About -->
+            <div class="about-modal hidden">
+                <article class="about-article">
+                    <button class="about__close-btn">
+                        <i class="fa-solid fa-xmark js-closeAbout"></i>
+                    </button>
+                    <div class="about-separate"></div>
+                    <h2 class="about-modal__heading section-heading">
+                        About Us
+                    </h2>
+                    <p class="about-modal__desc">
+                        Lorem Ipsum is simply dummy text of printing typesetting
+                        ststry lorem Ipsum the industry'ndard dummy text ever
+                        since of the 1500s, when an unknown printer took a
+                        galley of type and scra make a type specimen book. It
+                        has survived not.ly five centuries, but also the leap
+                        into electronic typesetting, remaining essentially
+                        unchanged the
+                    </p>
+
+                    <p class="about-modal__desc">
+                        Lorem Ipsum is simply dummy text of printing typesetting
+                        ststry lorem Ipsum the industry'ndard dummy text ever
+                        since of the 1500s, when an unknown printer took a
+                        galley of type and scra make a type specimen book. It
+                        has survived not.ly five centuries, but also the leap
+                        into electronic typesetting, remaining essentially
+                        unchanged the
+                    </p>
+                </article>
+            </div>
+
+            <!-- Sign in -->
+            <div class="signIn-modal hidden">
+                <div class="signIn__header">
+                    <h2 class="signIn__heading">Login Here</h2>
+                    <button class="signIn__close-btn js-closeSignIn">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
 
-                <div class="modal__body">
+                <div class="signIn__body">
                     <form action="" autocomplete="off">
                         <div>
                             <input
-                                class="modal__input"
+                                class="signIn__input"
                                 type="email"
                                 name="email"
                                 id="email-2"
                                 placeholder="Email..."
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             />
                         </div>
 
                         <div>
                             <input
-                                class="modal__input"
+                                class="signIn__input"
                                 type="password"
                                 name="password"
                                 id="password"
@@ -840,30 +871,32 @@
                             />
                         </div>
 
-                        <div class="modal-row">
-                            <div class="modal-row__rem">
+                        <div class="signIn-row">
+                            <div class="signIn-row__rem">
                                 <input
                                     type="checkbox"
                                     name="checkbox"
                                     id="checkbox"
+                                    hidden
                                 />
                                 <label for="checkbox">Remember me </label>
                             </div>
-                            <a href="#!" class="modal__forgot-pass"
+                            <a href="#!" class="signIn__forgot-pass"
                                 >Forget Password?</a
                             >
                         </div>
 
-                        <button class="modal__btn">Login</button>
+                        <button class="signIn__btn">Login</button>
                     </form>
                 </div>
 
-                <div class="modal__footer">
-                    <p class="modal__footer-desc">To Register New Account</p>
+                <div class="signIn__footer">
+                    <p class="signIn__footer-desc">To Register New Account</p>
                     <i
-                        class="fa-solid fa-arrow-right-long modal__footer-arrow"
-                    ></i>
-                    <button class="modal__footer-btn">Click Here</button>
+                        class="fa-solid fa-arrow-right-long signIn__footer-arrow"
+                    >
+                    </i>
+                    <button class="signIn__footer-btn">Click Here</button>
                 </div>
             </div>
         </div>
