@@ -95,6 +95,12 @@
         />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Responsive Web -->
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive/1.0.5/responsive.min.js"></script>
+        <![endif]-->
+
         <!-- Style Css -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
@@ -897,6 +903,91 @@
                     >
                     </i>
                     <button class="signIn__footer-btn">Click Here</button>
+                </div>
+            </div>
+
+            <!-- Sign up -->
+            <div class="signUp-modal hidden">
+                <div class="signUp__header">
+                    <h2 class="signUp__heading">Sign Up</h2>
+                    <button class="signUp__close-btn js-closeSignUp">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="signUp__body">
+                    <form autocomplete="off" action="" class="form-signUp">
+                        <div class="form-row">
+                            <label for="signUp-firstname" class="signUp-label"
+                                >User Name</label
+                            >
+                            <input
+                                required
+                                class="signUp__input"
+                                type="text"
+                                name="firstname"
+                                id="signUp-firstname"
+                                placeholder="User Name"
+                                minlength="8"
+                            />
+                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                        </div>
+                        <div class="form-row">
+                            <label for="signUp-email" class="signUp-label"
+                                >Email</label
+                            >
+                            <input
+                                required
+                                class="signUp__input"
+                                type="email"
+                                name="email"
+                                id="signUp-email"
+                                placeholder="Email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            />
+                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                        </div>
+                        <div class="form-row">
+                            <label for="signUp-password" class="signUp-label"
+                                >Password</label
+                            >
+                            <input
+                                required
+                                class="signUp__input"
+                                type="password"
+                                name="password"
+                                id="signUp-password"
+                                placeholder="Password"
+                                minlength="8"
+                            />
+                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                        </div>
+                        <div class="form-row">
+                            <label
+                                for="signUp-password__confir"
+                                class="signUp-label"
+                                >Confirm Password</label
+                            >
+                            <input
+                                required
+                                class="signUp__input"
+                                type="password"
+                                name="password"
+                                id="signUp-password__confir"
+                                placeholder="Confirm Password"
+                                minlength="8"
+                            />
+                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                        </div>
+
+                        <button class="form-signUp__submit">Create</button>
+                    </form>
+                </div>
+                <div class="signUp__footer">
+                    <p>
+                        Already have account
+                        <i class="fa-solid fa-arrow-right signUp-arrow"></i>
+                        <a href="#!" class="signUp__login"> Login </a>
+                    </p>
                 </div>
             </div>
         </div>

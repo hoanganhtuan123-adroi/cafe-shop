@@ -58,6 +58,7 @@ body {
 
 /* Sign In Modal */
 
+.signUp-modal,
 .signIn-modal {
     position: fixed;
     padding: 30px;
@@ -70,6 +71,7 @@ body {
     z-index: 10;
 }
 
+.signUp__heading,
 .signIn__heading {
     margin-bottom: 20px;
     font-size: 3rem;
@@ -77,6 +79,7 @@ body {
     text-align: center;
 }
 
+.signUp__close-btn,
 .signIn__close-btn {
     position: absolute;
     text-align: center;
@@ -91,6 +94,7 @@ body {
     transition: 0.3s;
 }
 
+.signUp__close-btn:hover,
 .signIn__close-btn:hover {
     background: #603809;
     color: #fff;
@@ -200,6 +204,7 @@ body {
     text-decoration: underline;
 }
 
+.form-signUp__submit,
 .signIn__footer-btn {
     font-size: 1.6rem;
     padding: 8px 10px;
@@ -207,12 +212,68 @@ body {
     font-size: #000;
     background: #fff;
     transition: 0.3s;
+    border-radius: 8px;
 }
 
+.form-signUp__submit:hover,
 .signIn__footer-btn:hover {
     background: #603809;
     color: #fff;
     cursor: pointer;
+}
+
+/* Sign Up Modal */
+
+.form-signUp {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.signUp__input {
+    padding: 4px 8px;
+    border: 1px solid #603809;
+    border-radius: 4px;
+    outline: none;
+}
+
+.sinUp-error {
+    visibility: hidden;
+    margin-top: 6px;
+    font-size: 1.4rem;
+    color: rgb(255, 0, 0);
+    justify-self: center;
+}
+
+.form-signUp__submit {
+    margin-top: 16px;
+    width: 80px;
+    align-self: center;
+}
+
+.signUp__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.signUp-arrow {
+    margin: 0 8px;
+}
+
+.signUp__login {
+    font-size: 1.8rem;
+    color: #603809;
+    padding: 8px;
+    text-decoration: underline;
 }
 
 /* About Modal */
