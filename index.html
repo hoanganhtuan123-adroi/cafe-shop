@@ -95,14 +95,9 @@
         />
         <meta name="theme-color" content="#ffffff" />
 
-        <!-- Responsive Web -->
-
-        <!--[if lt IE 9]>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive/1.0.5/responsive.min.js"></script>
-        <![endif]-->
-
         <!-- Style Css -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
     </head>
     <body>
         <header class="header">
@@ -111,7 +106,7 @@
                     <div class="header__bg">
                         <video autoplay muted loop class="header__video">
                             <source
-                                src="./assets/img/video/coffee_-_93269 (Original).mp4"
+                                src="./assets/img/video/coffee_-_1008 (Original).mp4"
                                 type="video/mp4"
                             />
                         </video>
@@ -222,7 +217,7 @@
                 <div class="container">
                     <div class="discover__inner">
                         <section class="discover__content">
-                            <h2 class="section-heading">
+                            <h2 class="discover__heading section-heading">
                                 Discover the best coffee
                             </h2>
                             <p class="discover__desc section-desc">
@@ -254,7 +249,10 @@
             <!-- Menu -->
             <section id="fullMenu" class="menu">
                 <div class="container">
-                    <h2 class="section-heading">
+                    <h2 class="menu__heading-mb section-heading">
+                        Enjoy new coffee
+                    </h2>
+                    <h2 class="menu__heading section-heading">
                         Enjoy a new blend of coffee style
                     </h2>
                     <p class="section-desc menu__desc">
@@ -355,7 +353,9 @@
             <!-- Different -->
             <section class="different">
                 <div class="container">
-                    <h2 class="section-heading">Why are we different?</h2>
+                    <h2 class="different__heading section-heading">
+                        Why are we different?
+                    </h2>
                     <p class="section-desc different__desc">
                         We don’t just make your coffee, we make your day!
                     </p>
@@ -430,7 +430,7 @@
             <!-- Join -->
             <section class="join">
                 <div class="container">
-                    <p class="section-desc">
+                    <p class="join__desc section-desc">
                         Great ideas start with great coffee, Lets help you
                         achieve that
                     </p>
@@ -929,7 +929,9 @@
                                 placeholder="User Name"
                                 minlength="8"
                             />
-                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                            <p class="sinUp-error">
+                                Vui lòng nhập ít nhất 8 kí tự!
+                            </p>
                         </div>
                         <div class="form-row">
                             <label for="signUp-email" class="signUp-label"
@@ -944,12 +946,14 @@
                                 placeholder="Email"
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             />
-                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                            <p class="sinUp-error">
+                                Vui lòng nhập đúng địa chỉ email!
+                            </p>
                         </div>
                         <div class="form-row">
-                            <label for="signUp-password" class="signUp-label"
-                                >Password</label
-                            >
+                            <label for="signUp-password" class="signUp-label">
+                                Password
+                            </label>
                             <input
                                 required
                                 class="signUp__input"
@@ -959,7 +963,9 @@
                                 placeholder="Password"
                                 minlength="8"
                             />
-                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                            <p class="sinUp-error">
+                                Vui lòng nhập ít nhất 8 kí tự!
+                            </p>
                         </div>
                         <div class="form-row">
                             <label
@@ -976,7 +982,9 @@
                                 placeholder="Confirm Password"
                                 minlength="8"
                             />
-                            <p class="sinUp-error">Vui lòng nhập đúng!</p>
+                            <p class="sinUp-error">
+                                Vui lòng nhập đúng mật khẩu!
+                            </p>
                         </div>
 
                         <button class="form-signUp__submit">Create</button>

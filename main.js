@@ -75,3 +75,6 @@ function closeAboutUs() {
 }
 
 closeAbout.addEventListener("click", closeAboutUs);
+
+// Scroll
+
