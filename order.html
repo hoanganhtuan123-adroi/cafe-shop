@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bean Scene</title>
+        <!-- Reset Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Style Css -->
+        <link rel="stylesheet" href="./assets/css/order.css" />
+    </head>
+    <body>
+        <main>
+            <section class="order">
+                <div class="container">
+                    <div class="order__inner">
+                        <div class="order__go-back-btn">
+                            <a href="./index.html" class="go-back">
+                                <i class="fa-solid fa-arrow-left go-back__icon">
+                                </i>
+                                <span>Go Back</span>
+                            </a>
+                        </div>
+                        <h2 class="order__heading">Order Form</h2>
+
+                        <div class="order__body">
+                            <form
+                                action=""
+                                autocomplete="off"
+                                class="order-form"
+                            >
+                                <div class="order-row">
+                                    <label class="order__label" for="menu"
+                                        >Choose Menu</label
+                                    >
+                                    <select
+                                        required
+                                        class="order__input"
+                                        type="text"
+                                        name=""
+                                        id="menu"
+                                    >
+                                        <option value="">
+                                            --Choose your favorite food--
+                                        </option>
+                                        <option value="Caramel Macchiato">
+                                            Caramel Macchiato
+                                        </option>
+                                        <option value="Cappuccino">
+                                            Cappuccino
+                                        </option>
+                                        <option value="Cafe Latte">
+                                            Cafe Latte
+                                        </option>
+                                        <option value="Traditional Coffee">
+                                            Traditional Coffee
+                                        </option>
+                                        <option value="Latte Macchiato">
+                                            Latte Macchiato
+                                        </option>
+                                        <option value="Cafe Mocha">
+                                            Cafe Mocha
+                                        </option>
+                                        <option value="Americano">
+                                            Americano
+                                        </option>
+                                        <option value="Espresso Con Panna">
+                                            Espresso Con Panna
+                                        </option>
+                                        <option value="Flan">Flan</option>
+                                        <option value="Mousse Cake">
+                                            Mousse Cake
+                                        </option>
+                                        <option value="Tiramisu">
+                                            Tiramisu
+                                        </option>
+                                        <option value="Panna Cotta">
+                                            Panna Cotta
+                                        </option>
+                                        <option value="Nama Chocolate">
+                                            Nama Chocolate
+                                        </option>
+                                        <option value="Macaron">Macaron</option>
+                                        <option value="Strawberry Cake">
+                                            Strawberry Cake
+                                        </option>
+                                        <option value="Donut Cake">
+                                            Donut Cake
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="order-row order-row--inline">
+                                    <label class="order__label" for="size"
+                                        >Size</label
+                                    >
+                                    <select
+                                        class="order__select"
+                                        name=""
+                                        id="size"
+                                    >
+                                        <option value="large">L</option>
+                                        <option value="medium">M</option>
+                                        <option value="small">S</option>
+                                    </select>
+                                </div>
+
+                                <div class="order-row">
+                                    <label class="order__label" for="qtt"
+                                        >Quantity</label
+                                    >
+                                    <input
+                                        required
+                                        class="order__input"
+                                        type="number"
+                                        name=""
+                                        min="0"
+                                        id="qtt"
+                                    />
+                                </div>
+
+                                <div class="order-row">
+                                    <label class="order__label" for="name"
+                                        >Name</label
+                                    >
+                                    <input
+                                        required
+                                        class="order__input"
+                                        type="text"
+                                        name=""
+                                        id="name"
+                                    />
+                                </div>
+
+                                <div class="order-row">
+                                    <label class="order__label" for="addr"
+                                        >Address</label
+                                    >
+                                    <input
+                                        required
+                                        class="order__input"
+                                        type="text"
+                                        name=""
+                                        id="addr"
+                                    />
+                                </div>
+
+                                <div class="order-row">
+                                    <label class="order__label" for="phone"
+                                        >Phone</label
+                                    >
+                                    <input
+                                        required
+                                        class="order__input"
+                                        type="tel"
+                                        name=""
+                                        id="Phone"
+                                    />
+                                </div>
+
+                                <button class="order__btn">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
