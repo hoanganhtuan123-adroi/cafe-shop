@@ -99,10 +99,7 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
 
         <!-- Animation -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header class="header">
@@ -269,7 +266,7 @@
                     </p>
                     <div class="menu__list">
                         <!-- Item 1 -->
-                        <article class="menu-item" data-wow-delay="0.5s">
+                        <article class="menu-item">
                             <img
                                 loading="lazy"
                                 src="./assets/img/menu/capuchino.jpg"
@@ -292,7 +289,7 @@
                         </article>
 
                         <!-- Item 2 -->
-                        <article class="menu-item" data-wow-delay="0.5s">
+                        <article class="menu-item">
                             <img
                                 loading="lazy"
                                 src="./assets/img/menu/chai latte.jpg"
@@ -315,7 +312,7 @@
                         </article>
 
                         <!-- Item 3 -->
-                        <article class="menu-item" data-wow-delay="0.5s">
+                        <article class="menu-item">
                             <img
                                 loading="lazy"
                                 src="assets/img/menu/macchiato.jpg"
@@ -338,7 +335,7 @@
                         </article>
 
                         <!-- Item 4 -->
-                        <article class="menu-item" data-wow-delay="0.5s">
+                        <article class="menu-item">
                             <img
                                 loading="lazy"
                                 src="./assets/img/menu/espresso.jpg"
@@ -1104,17 +1101,9 @@
         </div>
 
         <script src="/main.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            new WOW({
-                animateClass: "animate__animated",
-            }).init();
+            AOS.init();
         </script>
     </body>
 </html>

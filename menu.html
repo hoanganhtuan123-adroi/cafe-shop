@@ -102,8 +102,8 @@
 
         <!-- Animation -->
         <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
     </head>
     <body>
@@ -144,9 +144,10 @@
                             </ul>
                         </nav>
 
-                        <button class="header__buy">
+                        <div class="header__buy openCart">
                             <i class="fa-solid fa-cart-shopping buy-btn"></i>
-                        </button>
+                            <span class="quantity-item quantity">0</span>
+                        </div>
                     </div>
 
                     <section class="header__hero">
@@ -189,477 +190,8 @@
                         </section>
                         <!-- Drink -->
                         <div class="menu__box menu__box--first">
-                            <h2 class="menu__drink">Coffee</h2>
-                            <div class="menu__row">
-                                <!-- Item 1 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/CaramelMacchiato.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Caramel Macchiato
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 2 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/Cappuccino.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Cappuccino
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 3 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/Cafe Latte.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Cafe Latte
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 4 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/cofe.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Traditional Coffee
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 5 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/Latte Macchiato.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Latte Macchiato
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 6 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/Cafe Mocha.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Cafe Mocha
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 7 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/Americano.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Americano
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 8 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/coffee.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Espresso Con Panna
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-                            </div>
-                        </div>
-
-                        <!-- Dessert -->
-                        <div class="menu__box menu__box-second">
-                            <h2 class="menu__drink">Dessert</h2>
-                            <div class="menu__row">
-                                <!-- Item 1 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/flan.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">Flan</h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 2 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/mousseCake.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Mousse Cake
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 3 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/tiramisu.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Tiramisu
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 4 -->
-                                <article
-                                    class="menu-item wow animate__fadeInLeft"
-                                >
-                                    <img
-                                        src="./assets/menu-img/pannaCotta.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Panna Cotta
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 5 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/namaChocolate.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Nama Chocolate
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 6 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/macaron.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Macaron
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 7 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/joyful-vT5xrj3z1OE-unsplash.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Strawberry Cake
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                <!-- Item 8 -->
-                                <article
-                                    class="menu-item wow animate__fadeInRight"
-                                >
-                                    <img
-                                        src="./assets/menu-img/donut.jpg"
-                                        alt=""
-                                        class="menu-item__thumb"
-                                    />
-                                    <section class="menu-item__body">
-                                        <h3 class="menu-item__title">
-                                            Donut Cake
-                                        </h3>
-                                        <div class="menu-item__body-inf">
-                                            <span class="menu-item__price"
-                                                >$5.90</span
-                                            >
-                                            <button
-                                                data-text="Add to cart"
-                                                class="add-cart"
-                                            >
-                                                <i
-                                                    class="fa-solid fa-plus add-cart__icon"
-                                                ></i>
-                                            </button>
-                                        </div>
-                                    </section>
-                                </article>
-                            </div>
+                            <h2 class="menu__drink">Drink</h2>
+                            <div class="menu__row menu__row--first"></div>
                         </div>
 
                         <!-- Up -->
@@ -668,12 +200,26 @@
                         </a>
 
                         <!-- Cart -->
-                        <button class="cart-btn">
+                        <button class="cart-btn openCart">
                             <i
                                 class="fa-solid fa-cart-shopping cart-btn__icon"
                             ></i>
                         </button>
                     </div>
+                </div>
+            </section>
+
+            <section class="shoppingCart">
+                <h2 class="shoppingCart__heading">
+                    Shopping <span>Cart</span
+                    ><i class="fa-solid fa-bag-shopping shoppingCart__icon"></i>
+                </h2>
+                <div class="shoppingCart__items"></div>
+                <div class="shoppingCart__footer">
+                    <a href="./payproduct.html" class="shoppingCart__total">
+                        Check Out
+                    </a>
+                    <button class="shoppingCart__close">Close</button>
                 </div>
             </section>
         </main>
@@ -886,17 +432,10 @@
             </div>
         </footer>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script>
-            new WOW({
-                animateClass: "animate__animated",
-            }).init();
-        </script>
         <script src="./assets/js/menu.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

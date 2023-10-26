@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Caramel Macchiato",
+        "img": "./assets/menu-img/CaramelMacchiato.jpg",
+        "price": 5.9
+    },
+    {
+        "id": 2,
+        "name": "Cappuccino",
+        "img": "./assets/menu-img/Cappuccino.jpg",
+        "price": 6.3
+    },
+    {
+        "id": 3,
+        "name": "Cafe Latte",
+        "img": "./assets/menu-img/CafeLatte.jpg",
+        "price": 4.5
+    },
+    {
+        "id": 4,
+        "name": "Traditional Coffee",
+        "img": "./assets/menu-img/cofe.jpg",
+        "price": 5.2
+    },
+    {
+        "id": 5,
+        "name": "Latte Macchiato",
+        "img": "./assets/menu-img/LatteMacchiato.jpg",
+        "price": 5.9
+    },
+    {
+        "id": 6,
+        "name": "Cafe Mocha",
+        "img": "./assets/menu-img/CafeMocha.jpg",
+        "price": 8.2
+    },
+    {
+        "id": 7,
+        "name": "Americano",
+        "img": "./assets/menu-img/Americano.jpg",
+        "price": 5.7
+    },
+    {
+        "id": 8,
+        "name": "Espresso Con Panna",
+        "img": "./assets/menu-img/coffee.jpg",
+        "price": 6.6
+    },
+    {
+        "id": 9,
+        "name": "Egg Coffee",
+        "img": "./assets/menu-img/egg-coffee.webp",
+        "price": 10
+    },
+    {
+        "id": 10,
+        "name": "Orange Coffee",
+        "img": "./assets/menu-img/caffee-orange.jpg",
+        "price": 8.2
+    },
+    {
+        "id": 11,
+        "name": "Coconut Coffee",
+        "img": "./assets/menu-img/coconut-coffee.jpg",
+        "price": 9.2
+    },
+    {
+        "id": 12,
+        "name": "Caramel Coffee",
+        "img": "./assets/menu-img/caramel-coffee.jpg",
+        "price": 6.2
+    },
+    {
+        "id": 13,
+        "name": "Hokkaido Tea",
+        "img": "./assets/menu-img/hokkaido-tea.jpg",
+        "price": 6.2
+    },
+    {
+        "id": 14,
+        "name": "Jasmine Milk Tea",
+        "img": "./assets/menu-img/jasmine.jpg",
+        "price": 8.3
+    },
+    {
+        "id": 15,
+        "name": "Chocolate Milk Tea",
+        "img": "./assets/menu-img/socola-milk.png",
+        "price": 8.3
+    },
+    {
+        "id": 16,
+        "name": "Taro Milk Tea",
+        "img": "./assets/menu-img/taro-milk.jpg",
+        "price": 8.3
+    }
+]

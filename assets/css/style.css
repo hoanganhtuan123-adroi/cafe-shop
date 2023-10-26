@@ -397,7 +397,6 @@ textarea {
 }
 
 .container {
-    /* width: 1180px; */
     width: 95%;
     max-width: calc(100% - 48px);
     margin: 0 auto;
